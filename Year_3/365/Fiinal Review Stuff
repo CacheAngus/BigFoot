@@ -1,0 +1,14 @@
+
+//this is the review stuff
+
+//Travelling Saleman problem
+
+	//This problem is a hamiltonion issue that is a problem involving reaching each noce once in the most efficient way possible
+
+	//It is an approximate mst problem involving:
+		//1) Let 1 be starting end eding point for salesman
+		//2) Construct MST from with 1 as the root using Prim's Algorithm
+		//List vertices visited in preorder walk of the constructed MST and add 1 at the end
+
+
+//Knapsack Fractional Problem
