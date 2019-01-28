@@ -1,0 +1,11 @@
+Notes on the lab:
+For testing, we were able to access the /etc/passwrd fileand print it out in the terminal, as seen in the pictures below, the files were both the same, regardless of the method used.
+The ouptput of these programs can also be seen in the lab file under selfcompTest.txt and clientTest1.txt.
+Buffer Length:
+The length of the buffers were determined through the compromise1 temperary buffers. It was the number of characters within it plus the null value. 
+For selfcomp the buffer was 145.
+For client the buffer was 130.
+Addresses: The WXYZ tested overflow gave the eip address 0x5a595857. When this hexadecimal value displayed in the info registers eip, that was how we knew it was the right number of characters in the compromise1 buffer to cause the buffer overflow in compromise
+For both self comp and client, the buffer code included the new address location for the end of the asm code. To get this value we took the stack pointer value (esp) and subtracted the lenght of the asm code (61) and subtracted the null pointer value (4).
+selfcomp: 0xbffff890 - 4 -61 = 0xbffff82b.
+client = 0xbffff810 - 4 -61 = 0xbffff7cf.

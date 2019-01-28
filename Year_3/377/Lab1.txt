@@ -1,0 +1,32 @@
+
+
+//pseudo code
+int isProcessDir(constr struct dirent* d){
+	if the d->d_name returns a digit, then it returns 1 if the first character of the directory name is a digit. 
+	If not it returns a 0.
+}
+
+int main(){
+create a double pointer namelist to the struct array dirent
+int n for scandir storage
+int i for iteration.
+
+There needs to be buffers for both opening the files in the directories and for getting the 
+data names:
+char <name of attribute>[100]
+
+File pointer for file opening and storage.
+
+Use scandir to store the running processes in namelist with a isProcessDir filter
+ and then return the amount in n.
+
+for i 0 to n, iterate by 1 through namelist
+	string print the directory "/proc/(directory name)/status"
+	file open to read, store in buffer string1
+	scan the file line by line and store wanted values in named buffers and all unwanted in temp buffer
+	print the wanted values in a single line
+	close the file
+	iterate through the next directory file
+
+return 0 for the main
+}
