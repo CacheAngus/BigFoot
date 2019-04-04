@@ -1,0 +1,27 @@
+{
+  "name": "instaclone",
+  "version": "1.0.0",
+  "description": "10kc challange application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CacheAngus/TenThousandCoffees.git"
+  },
+  "author": "cache angus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CacheAngus/TenThousandCoffees/issues"
+  },
+  "homepage": "https://github.com/CacheAngus/TenThousandCoffees#readme",
+  "dependencies": {
+    "@angular/cli": "^7.3.8",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.21",
+    "nodemon": "^1.18.10"
+  }
+}
